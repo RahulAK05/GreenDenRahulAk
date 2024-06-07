@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .whole__container {
+        display: grid;
+        grid-template-rows: 5fr 30fr 5fr;
+        background-color: aqua;
+      }
+      .header {
+        background-color: green;
+        padding: 10px;
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .content1 {
+        background-color: lightgreen;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 28fr;
+        padding: 10px;
+        margin: 10px;
+        width: 1fr;
+      }
+      .content2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: orange;
+        padding: 10px;
+        margin: 10px;
+      }
+      .content2a {
+        display: grid;
+        align-items: end;
+        justify-content: center;
+      }
+      .content2b {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+        margin: 10px;
+      }
+      .content2b1 {
+        background-color: yellow;
+        color: white;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-right: 20px;
+      }
+      .content2b2 {
+        background-color: yellow;
+        color: white;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-right: 20px;
+      }
+      .content2b3 {
+        background-color: yellow;
+        color: white;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+      .footer {
+        background-color: green;
+        padding: 10px;
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole__container">
+      <div class="header">
+        <h1>Header</h1>
+      </div>
+      <div class="content">
+        <div class="content1">
+          <h1>Aside</h1>
+        </div>
+        <div class="content2">
+          <div class="content2a">
+            <h1>Article</h1>
+          </div>
+          <div class="content2b">
+            <div class="content2b1"><h1>Image</h1></div>
+            <div class="content2b2"><h1>Image</h1></div>
+            <div class="content2b3"><h1>Image</h1></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h1>Footer</h1>
+      </div>
+    </div>
+  </body>
+</html>
