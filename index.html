@@ -19,7 +19,8 @@
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 md:hidden"
+        id="side-nav-icon"
+        class="h-6 w-6 md:hidden cursor-pointer"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -42,6 +43,27 @@
         </li>
       </ul>
     </nav>
+
+    <!--Side nav bar-->
+    <section
+      id="side-nav"
+      class="bg-green-100 fixed top-0 z-20 transition-all duration-500"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <div class="text-right p-5">
+        <p id="side-nav-close" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col items-center gap-5 text-gray-600 md:flex">
+        <li class="hover:underline hover:text-black"><a href="#">Home </a></li>
+        <li class="hover:underline hover:text-black">
+          <a href="products.html">Products </a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="contacts.html">Contact </a>
+        </li>
+      </ul>
+    </section>
+
     <!--Header-->
     <section class="bg-green-100 p-4 flex justify-center md:p-8">
       <div>
@@ -233,5 +255,6 @@
       </p>
       <p>@ 2024 GreenDen.com</p>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

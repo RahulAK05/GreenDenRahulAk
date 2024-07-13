@@ -20,7 +20,8 @@
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 md:hidden"
+            id="products-side-nav-icon"
+            class="h-6 w-6 md:hidden cursor-pointer"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -46,10 +47,32 @@
           </ul>
         </nav>
       </div>
+      <!--Side nav bar-->
+      <section
+        id="side-nav"
+        class="bg-green-100 fixed top-0 z-20 transition-all duration-500"
+        style="width: 50%; height: 100vh; right: -50%"
+      >
+        <div class="text-right p-5">
+          <p id="side-nav-close" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-5 text-gray-600 md:flex">
+          <li class="hover:underline hover:text-black">
+            <a href="index.html">Home </a>
+          </li>
+          <li class="hover:underline hover:text-black">
+            <a href="products.html">Products </a>
+          </li>
+          <li class="hover:underline hover:text-black">
+            <a href="contacts.html">Contact </a>
+          </li>
+        </ul>
+      </section>
       <div class="text-center">
         <div>
           <h1 class="font-bold text-3xl mb-2 mt-8">Our Products</h1>
           <input
+            id="search"
             type="text"
             placeholder="Search for a Product"
             class="border border-black mt-1 p-2 m-3"
@@ -57,7 +80,10 @@
           />
         </div>
 
-        <div class="grid grid-cols-2 mt-8 gap-5 md:grid-cols-4">
+        <div
+          id="plant-container"
+          class="grid grid-cols-2 mt-8 gap-5 md:grid-cols-4 transition-all duration-500"
+        >
           <div>
             <img
               src="Untitled design (1).png"
@@ -71,7 +97,7 @@
               src="Untitled design (2).png"
               class="inline hover:shadow-xl transform hover:-translate-y-2 mb-2"
             />
-            <h1>Rose Plant</h1>
+            <h1>Hibiscus Plant</h1>
             <p>100Rs</p>
           </div>
           <div>
@@ -79,7 +105,7 @@
               src="Untitled design (3).png"
               class="inline hover:shadow-xl transform hover:-translate-y-2 mb-2"
             />
-            <h1>Rose Plant</h1>
+            <h1>Sunflower Plant</h1>
             <p>100Rs</p>
           </div>
           <div>
@@ -87,7 +113,7 @@
               src="Untitled design.png"
               class="inline hover:shadow-xl transform hover:-translate-y-2 mb-2"
             />
-            <h1>Rose Plant</h1>
+            <h1>Neem Plant</h1>
             <p>100Rs</p>
           </div>
           <div>
@@ -95,7 +121,7 @@
               src="Untitled design (1).png"
               class="inline hover:shadow-xl transform hover:-translate-y-2 mb-2"
             />
-            <h1>Rose Plant</h1>
+            <h1>Lily Plant</h1>
             <p>100Rs</p>
           </div>
           <div>
@@ -103,7 +129,7 @@
               src="Untitled design (2).png"
               class="inline hover:shadow-xl transform hover:-translate-y-2 mb-2"
             />
-            <h1>Rose Plant</h1>
+            <h1>Jasmine Plant</h1>
             <p>100Rs</p>
           </div>
           <div>
@@ -111,7 +137,7 @@
               src="Untitled design (3).png"
               class="inline hover:shadow-xl transform hover:-translate-y-2 mb-2"
             />
-            <h1>Rose Plant</h1>
+            <h1>Tulip Plant</h1>
             <p>100Rs</p>
           </div>
           <div>
@@ -119,7 +145,7 @@
               src="Untitled design.png"
               class="inline hover:shadow-xl transform hover:-translate-y-2 mb-2"
             />
-            <h1>Rose Plant</h1>
+            <h1>Lotus Plant</h1>
             <p>100Rs</p>
           </div>
         </div>
@@ -135,5 +161,6 @@
         </section>
       </div>
     </section>
+    <script src="product.js"></script>
   </body>
 </html>
